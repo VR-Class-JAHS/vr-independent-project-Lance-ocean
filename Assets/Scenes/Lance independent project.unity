@@ -437,7 +437,7 @@ PrefabInstance:
     - target: {fileID: 4927423175397566511, guid: c15fbd91fc16a64468fcd12ccbf98ae4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3044305
+      value: 2.53
       objectReference: {fileID: 0}
     - target: {fileID: 4927423175397566511, guid: c15fbd91fc16a64468fcd12ccbf98ae4,
         type: 3}
@@ -904,7 +904,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_TeleportationProvider: {fileID: 0}
-  m_MatchOrientation: 0
+  m_MatchOrientation: 2
   m_MatchDirectionalInput: 0
   m_TeleportTrigger: 0
   m_FilterSelectionByHitNormal: 0
@@ -3596,12 +3596,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1041624992}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1051369769 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189,
-    type: 3}
-  m_PrefabInstance: {fileID: 2133735583}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1120720547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1973745421898948489, guid: 1b025ef3f00355c4d95a4b45921cde70,
@@ -4548,7 +4542,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1051369769}
   - {fileID: 650672842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4903,7 +4896,6 @@ GameObject:
   - component: {fileID: 1350974765}
   - component: {fileID: 1350974764}
   - component: {fileID: 1350974768}
-  - component: {fileID: 1350974769}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -5109,33 +5101,6 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
---- !u!54 &1350974769
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350974763}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
 --- !u!1001 &1363625365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5365,7 +5330,7 @@ PrefabInstance:
     - target: {fileID: 264382079759274573, guid: dbe7b9e1570050841a8f1d6f3ee2629f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.655747
+      value: 9.72
       objectReference: {fileID: 0}
     - target: {fileID: 264382079759274573, guid: dbe7b9e1570050841a8f1d6f3ee2629f,
         type: 3}
@@ -6138,7 +6103,7 @@ PrefabInstance:
     - target: {fileID: 8149569189288784075, guid: 0fee49bb1b67cbb4ab05a192352fd7c9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.655747
+      value: 9.72
       objectReference: {fileID: 0}
     - target: {fileID: 8149569189288784075, guid: 0fee49bb1b67cbb4ab05a192352fd7c9,
         type: 3}
@@ -6864,7 +6829,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1313711681}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
@@ -7363,7 +7328,7 @@ PrefabInstance:
     - target: {fileID: 7676174461239129878, guid: 1b025ef3f00355c4d95a4b45921cde70,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.093169
+      value: -5.05
       objectReference: {fileID: 0}
     - target: {fileID: 7676174461239129878, guid: 1b025ef3f00355c4d95a4b45921cde70,
         type: 3}
@@ -7858,12 +7823,13 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 139200559}
   - {fileID: 2124398260}
+  - {fileID: 2133735583}
   - {fileID: 1313711681}
   - {fileID: 1350974767}
   - {fileID: 936961296}
   - {fileID: 6392176106923558944}
   - {fileID: 1376080163}
-  - {fileID: 522651732662328856}
   - {fileID: 1698905369}
   - {fileID: 537149716}
   - {fileID: 1316701064}
+  - {fileID: 522651732662328856}
