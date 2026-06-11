@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_HapticSelectCancelIntensity: 0
   m_HapticSelectCancelDuration: 0
   m_PlayHapticsOnHoverEntered: 1
-  m_HapticHoverEnterIntensity: 0.109
+  m_HapticHoverEnterIntensity: 0.3
   m_HapticHoverEnterDuration: 0.1
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
@@ -2524,11 +2524,13 @@ MonoBehaviour:
   m_AudioClipForOnSelectEntered: {fileID: 8300000, guid: f0dff4da8e4204fe9b98afb911292ef2,
     type: 3}
   m_PlayAudioClipOnSelectExited: 1
-  m_AudioClipForOnSelectExited: {fileID: 0}
+  m_AudioClipForOnSelectExited: {fileID: 8300000, guid: f0dff4da8e4204fe9b98afb911292ef2,
+    type: 3}
   m_PlayAudioClipOnSelectCanceled: 0
   m_AudioClipForOnSelectCanceled: {fileID: 0}
   m_PlayAudioClipOnHoverEntered: 1
-  m_AudioClipForOnHoverEntered: {fileID: 0}
+  m_AudioClipForOnHoverEntered: {fileID: 8300000, guid: d306fcf87f5874a5888091cab90ba4a5,
+    type: 3}
   m_PlayAudioClipOnHoverExited: 0
   m_AudioClipForOnHoverExited: {fileID: 0}
   m_PlayAudioClipOnHoverCanceled: 0
@@ -2544,7 +2546,7 @@ MonoBehaviour:
   m_HapticSelectCancelIntensity: 0
   m_HapticSelectCancelDuration: 0
   m_PlayHapticsOnHoverEntered: 1
-  m_HapticHoverEnterIntensity: 0.352
+  m_HapticHoverEnterIntensity: 0.3
   m_HapticHoverEnterDuration: 0.1
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
@@ -3276,7 +3278,8 @@ Transform:
   m_LocalPosition: {x: -0.0126791, y: 1.0048912, z: -2.0730982}
   m_LocalScale: {x: 0.093913496, y: 2.0619216, z: 0.8382556}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1398280205}
   m_Father: {fileID: 1218874293}
   m_LocalEulerAnglesHint: {x: 0, y: -89.524, z: 0}
 --- !u!65 &769020829
@@ -3453,7 +3456,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_TeleportationProvider: {fileID: 0}
-  m_MatchOrientation: 0
+  m_MatchOrientation: 2
   m_MatchDirectionalInput: 0
   m_TeleportTrigger: 0
   m_FilterSelectionByHitNormal: 0
@@ -3461,7 +3464,7 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
-  m_TeleportAnchorTransform: {fileID: 893512927}
+  m_TeleportAnchorTransform: {fileID: 1653307833}
 --- !u!1 &873408580 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6288350432999405076, guid: c15fbd91fc16a64468fcd12ccbf98ae4,
@@ -3670,7 +3673,7 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
-  m_TeleportAnchorTransform: {fileID: 769020828}
+  m_TeleportAnchorTransform: {fileID: 1398280205}
 --- !u!1001 &917740808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6362,6 +6365,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398228197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1398280204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1398280205}
+  m_Layer: 0
+  m_Name: teleport child
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1398280205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398280204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.63, y: -0.306, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769020828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1416461127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6916,6 +6950,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 104496653}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1653307832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653307833}
+  m_Layer: 0
+  m_Name: teleport door up
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1653307833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653307832}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7011178, z: -0, w: 0.7130455}
+  m_LocalPosition: {x: -7.8, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 893512927}
+  m_LocalEulerAnglesHint: {x: 0, y: -89.034, z: 0}
 --- !u!1 &1672010613
 GameObject:
   m_ObjectHideFlags: 0
@@ -9565,7 +9630,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3268590829862758241, guid: 3fbc11a60985a4444b56ed9a41b33b73,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1653307833}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5482447393697324680, guid: 3fbc11a60985a4444b56ed9a41b33b73,
         type: 3}
